@@ -1,0 +1,40 @@
+name: archive_file
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.6
+  get_cli: ^1.8.1
+  flutter_svg: ^2.0.10+1
+  get: 4.6.6
+  flutter: 
+    sdk: flutter
+  styled_widget: ^0.4.1
+  pull_to_refresh: ^2.0.0
+  hive: ^2.2.3
+  file_picker: ^6.1.1
+  hive_generator: ^2.0.1
+
+dev_dependencies: 
+  flutter_lints: ^3.0.0
+  flutter_test: 
+    sdk: flutter
+  build_runner: ^2.4.8
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Ovo
+      fonts:
+        - asset: assets/fonts/Ovo/Ovo-Regular.ttf
+
