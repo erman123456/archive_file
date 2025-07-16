@@ -53,7 +53,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                   const SizedBox(height: 32),
                   ElevatedButton.icon(
-                    onPressed: () => Get.toNamed('/archive-file'),
+                    onPressed: () => Get.toNamed('/archive-document'),
                     icon: Icon(
                       Icons.check_circle_outline,
                       color: Colors.blue.shade700,

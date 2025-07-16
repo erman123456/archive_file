@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
@@ -31,7 +32,8 @@ class LoginController extends GetxController {
     String password = passwordController.text.trim();
     if (username.isEmpty || password.isEmpty) {
       Get.snackbar('Error', 'Username and password cannot be empty',
-          snackPosition: SnackPosition.TOP);
+          snackPosition: SnackPosition.TOP,
+          backgroundColor: Colors.red.shade100);
       return;
     }
 
@@ -39,7 +41,8 @@ class LoginController extends GetxController {
       Get.offAllNamed('/home');
     } else {
       Get.snackbar('Error', 'Invalid username or password',
-          snackPosition: SnackPosition.TOP);
+          snackPosition: SnackPosition.TOP,
+          backgroundColor: Colors.red.shade100);
     }
   }
 

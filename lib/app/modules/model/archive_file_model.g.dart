@@ -17,6 +17,7 @@ class ArchiveFileModelAdapter extends TypeAdapter<ArchiveFileModel> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return ArchiveFileModel(
+      id: fields[2] as int,
       name: fields[0] as String,
       path: fields[1] as String,
       size: fields[2] as String,

@@ -1,3 +1,4 @@
+import 'package:archive_file/app/modules/archive/views/kelayakan_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/archive/bindings/archive_binding.dart';
@@ -27,7 +28,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.ARCHIVE_DOCUMENT,
-      page: () => const ArchiveView(),
+      page: () => const KelayakanView(),
       binding: ArchiveBinding(),
     ),
     GetPage(
