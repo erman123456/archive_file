@@ -19,6 +19,7 @@ class ArchiveFileModelAdapter extends TypeAdapter<ArchiveFileModel> {
     return ArchiveFileModel(
       name: fields[0] as String,
       path: fields[1] as String,
+      size: fields[2] as String,
     );
   }
 
@@ -29,7 +30,8 @@ class ArchiveFileModelAdapter extends TypeAdapter<ArchiveFileModel> {
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
-      ..write(obj.path);
+      ..write(obj.path)
+      ..write(obj.size);
   }
 
   @override

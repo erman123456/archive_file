@@ -10,5 +10,8 @@ class ArchiveFileModel extends HiveObject {
   @HiveField(1)
   String path;
 
-  ArchiveFileModel({required this.name, required this.path});
+  @HiveField(2)
+  String size;
+
+  ArchiveFileModel({required this.name, required this.path, this.size = ''});
 }

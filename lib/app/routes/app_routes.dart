@@ -7,6 +7,7 @@ abstract class Routes {
   static const ARCHIVE = _Paths.ARCHIVE;
   static const ARCHIVE_DOCUMENT = _Paths.ARCHIVE_DOCUMENT;
   static const ARCHIVE_FILE = _Paths.ARCHIVE_FILE;
+  static const LOGIN = _Paths.LOGIN;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const ARCHIVE = '/archive';
   static const ARCHIVE_DOCUMENT = '/archive-document';
   static const ARCHIVE_FILE = '/archive-file';
+  static const LOGIN = '/login';
 }
